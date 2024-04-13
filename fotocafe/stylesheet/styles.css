@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3.815rem;
+    margin: 0;
+}
+
+
+h2 {
+    font-size: 3.052rem;
+}
+
+p, a {
+    font-size: 1rem;
+}
+
+.wrapper {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 35px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+header p {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 2rem 8rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+} 
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+  
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #575757;
+    transition: color 200ms ease-in-out;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* HERO */
+.main-container  {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.main-content {
+    padding-right: 2rem;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.main-button:hover {
+    background-color: #343434;
+}
+
+
+.main-header {
+    position: relative;
+}
+
+.beans {
+    position: absolute;
+    top: -30px;
+    left: -42px;
+    width: 50px;
+}
+
+.main-img {
+    margin-left: auto;    
+    width: 80%;
+}
+
+/*LISTING*/
+
+.listing {
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.listing h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 3.815rem;
+    letter-spacing: 0.5ch;
+    margin-top: 50px;
+}
+
+.listing h2 {
+    font-family: 'DM Serif Display';
+    font-size: 2.441rem;
+}
+
+
+.list {
+    /* margin: 50px; */
+}
+
+.lister {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-list{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 1rem 2rem;
+    min-height: 300px;
+}
+
+
+.card-cont h3 {
+    font-size: 1.563rem;
+    margin-bottom: 6px;
+}
+
+.card-price {
+    font-size: 1.333rem;
+}
+
+.card-img {
+}
+
+.card-img img {
+    height: 250px;
+    width: 250px;
+}
+
+.card-cont {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.card-button {
+    /* margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 40px;
+    color: white; */
+
+    margin-left: auto;
+    width: 200px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 35px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* FOOTER */
+footer {
+    padding: 1rem 8rem;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 48rem) {
+    .wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .beans {
+        left: 0;
+    }
+
+    .main-content {
+        text-align: center;
+    }
+
+    .main-img {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 75rem) {
+    
+    .lister {
+        grid-template-columns: 1fr;
+    }
+}
